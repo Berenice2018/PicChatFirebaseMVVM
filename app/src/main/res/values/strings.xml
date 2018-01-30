@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PicChat</string>
+    <string name="default_toolbar_title">@string/app_name</string>
+
+    <!-- message list fragment -->
+    <string name="loading_messages">Loading messages</string>
+    <string name="cd_messages_list">content description of message list</string>
+    <string name="sign_out">Sign Out</string>
+
+    <!-- composer fragment -->
+    <string name="send_button_label">Send</string>
+    <string name="paragraph2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </string>
+    <string name="write_a_description">Write a description</string>
+
+
+    <string name="user_name">Mickey Mouse</string>
+    <string name="description">Description</string>
+    <string name="by_user">Picture posted by user:</string>
+    <string name="paragraph1">Machu Picchu is an Incan citadel set high in the Andes Mountains in
+    Peru, above the Urubamba River valley.</string>
+
+    <string name="image_caption">A view of Machu Picchu</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="message"
+            type="de.visualfan.picchat.model.Message"/>
+
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/product_item_min_height"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/item_horizontal_margin"
+        android:layout_marginEnd="@dimen/item_horizontal_margin"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_marginStart="@dimen/item_horizontal_margin"
+            android:layout_marginEnd="@dimen/item_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:contentDescription="user_name"
+                android:text="@{message.userName}"
+                tools:text="@string/user_name"/>
+
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@+id/name"
+                android:background="@drawable/main_header_selector"
+                />
+
+            <ImageView
+                android:id="@+id/photoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thumbnail_size"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/line"
+                android:scaleType="centerCrop"
+                android:background="@drawable/main_header_selector"
+                tools:src="@drawable/blumen"
+                />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/description_tv_height"
+                android:layout_below="@id/photoImageView"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@{message.description}"
+                tools:text="@string/paragraph2"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</layout>
+
+
+<!--
+
+<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:text="@{@string/product_price(product.price)}"/>
+
+-->

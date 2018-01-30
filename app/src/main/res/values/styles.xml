@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. - ->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarTheme">@style/MyToolBar</item>
+        <item name="android:toolbarStyle">@style/MyToolBar</item>
+        <!-- Support library compatibility -->
+        <item name="toolbarStyle">@style/MyToolBar</item>
+
+        <item name="android:colorButtonNormal">@drawable/button_selector</item>
+        <item name="colorButtonNormal">@drawable/button_selector</item>
+        <item name="android:buttonStyle">@style/FriendlyButtonStyle</item>
+    </style>
+
+    <style name="FriendlyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorSecondary_text</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+    <!-- ToolBar styles parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse" -->
+    <style name="MyToolBar">
+        <item name="actionMenuTextColor">@color/colorIcons</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Snackbar style-->
+    <style name="TextAppearance.Design.Snackbar.Message" parent="android:TextAppearance" tools:override="true">
+        <!--item name="android:background">@color/colorSecondary_text</item> set in code RecyclerView-->
+        <item name="android:textColor">@color/colorIcons</item>
+    </style>
+
+
+    <!-- photo detail activity -->
+    <style name="ContentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:color">@color/colorPrimary_text</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <!-- Firebase Login-->
+    <style name="LoginTheme" parent="MyAppTheme">
+        <item name="android:actionBarStyle">@style/MyToolBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@drawable/bg_login</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimaryLight</item>
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item>
+    </style>
+
+
+    <style name="FirebaseUI.Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="FirebaseUI.Text.Link">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>

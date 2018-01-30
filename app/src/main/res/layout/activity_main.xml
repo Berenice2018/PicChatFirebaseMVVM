@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/MyAppTheme">
+
+    <fragment android:name="de.visualfan.picchat.ui.MessageListFragment"
+        android:id="@+id/recycler_fragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
+
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            android:id="@+id/photoPickerButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@android:drawable/ic_menu_gallery"
+            android:contentDescription="photo picker button" />
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:inputType="" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:enabled="false"
+            android:text="SEND"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/colorAccent"
+        android:indeterminateTintMode="src_in"
+        />
+</FrameLayout>-->
