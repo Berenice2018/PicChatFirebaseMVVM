@@ -2,6 +2,14 @@ apply plugin: 'com.android.application'
 
 
 android {
+    signingConfigs {
+        release {
+            keyAlias 'avk'
+            keyPassword '1828Fbie,fziwa'
+            storeFile file('/Users/administrator/Library/Android/sdk/keystore-avk.jks')
+            storePassword 'avktrwy'
+        }
+    }
     compileSdkVersion 27
     dataBinding {
         enabled = true
@@ -10,19 +18,24 @@ android {
         applicationId "de.visualfan.picchat"
         minSdkVersion 23
         targetSdkVersion 27
-        versionCode 1
+        versionCode 3
         versionName "1.0"
         //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
+        versionNameSuffix 'v3'
     }
     buildTypes {
         release {
-            minifyEnabled true
+
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
+    }
+    productFlavors {
     }
 }
 
